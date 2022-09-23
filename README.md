@@ -57,6 +57,7 @@ We are creating an application to track departments, employees and tickets.
 
 Some of the initial model set up and testing has been done for you.
 
+## User Stories
 ```
 Story 1
 Department Index
