@@ -1,13 +1,43 @@
-— 
-title: Ticket, Please
-layout: page
-—
+# Tickets, Please!
 
-Read user stories very carefully.
+This repository requires and has been tested on Ruby v2.7.4 and is based on Rails 5.2.8.
 
-Fork and clone repo. 
+RSpec and Shoulda-Matchers have been installed and set up.
 
-When time is up, submit pull request.
+## Setup
+
+1. fork this repo
+2. clone your fork
+3. `git clone <repo_name>`
+4. `cd <repo_name>`
+5. `bundle install`
+
+When you run `bundle exec rspec` you should have 2 passing tests.
+
+## Instructions
+
+* Work on this assessment independently. DO NOT discuss with anyone.
+* You are allowed to use any references including notes, Google, lesson plans, etc.
+* Read each story carefully before you start working.
+* Commit Frequently, about every 15 - 30 minutes
+* Push your code to your fork **once the time is up (not before!)**
+
+## Submission
+
+**Once the time for the assessment is up**, push your code to your fork and create a pull request to the `turingschool-examples` repository. Include the following:
+
+* Your Name
+* A reflection on how you felt you did with this challenge and what story you got through
+
+## Requirements
+
+* TDD all new work
+* model methods and relationships must be fully tested.
+
+## Not Required
+
+* No visual styling is required or expected
+* You do not need to test for or create any model validations.
 
 ## Overview
 
@@ -25,7 +55,7 @@ We are creating an application to track departments, employees and tickets.
 * Employees have many Tickets
 * Tickets can belong to many Employees
 
-You will need to create all the migrations
+Some of the initial model set up and testing has been done for you.
 
 ```
 Story 1
