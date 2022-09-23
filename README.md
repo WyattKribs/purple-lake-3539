@@ -47,8 +47,8 @@ We are creating an application to track departments, employees and tickets.
 	* ex. name: ‘IT’, floor: ‘Basement’
 * Employees have a name, and level
 	* ex. name: ‘Christina Aguilera’, level: 2
-* Tickets have a subject and an age
-	* ex. subject: ‘printers broken’, age: 5
+* Tickets have a subject, age (integer), and open (boolean) attributes
+	* ex. subject: ‘printers broken’, age: 5, open: true
 
 * Departments have many Employees
 * Employees belong to a Department
@@ -73,9 +73,8 @@ Employee Show
 
 As a user,
 When I visit the Employee show page,
-I see the employee's name, department
-and a list of all of their tickets from oldest to youngest.
-I also see the oldest ticket assigned to the employee listed separately
+I see the employee's name and department name,
+and I see a list of all of their tickets from oldest to youngest that only includes open tickets
 ```
 ```
 Story 3
@@ -83,20 +82,21 @@ Story 3
 As a user,
 When I visit the employee show page,
 I do not see any tickets listed that are not assigned to the employee
-and I see a form to add a ticket to this movie
+and I see a form to add a ticket to this employee
 When I fill in the form with the id of a ticket that already exists in the database
 and I click submit
 Then I am redirected back to that employees show page
 and i see the ticket's subject now listed
-(you do not have to test for sad path, for example if the id does not match an existing ticket
+(you do not have to test for sad path, for example if the id does not match an existing ticket)
 ```
 ## Extension
 ```
 Extension
-Best Friends
+Best Friend
 
 As a user,
-When I visit an employee's show page
-I see that employees name and level
-and I see a unique list of all the other employees that this employee shares tickets with
+When I visit an employee show page,
+Then I see the name of the other employee
+who has the highest count of closed tickets shared with this employee,
+and I see the count of closed tickets that they share with this employee
 ```
