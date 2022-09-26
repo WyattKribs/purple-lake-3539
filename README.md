@@ -87,8 +87,8 @@ I do not see any open tickets listed that are not assigned to the employee
 and I see a form to add a ticket to this employee
 When I fill in the form with the id of an open ticket that already exists in the database
 and I click submit
-Then I am redirected back to that employees show page
-and i see the ticket's subject now listed
+Then I am redirected back to that employee's show page
+and I see the ticket's subject now listed
 (you do not have to test for sad path, for example if the id does not match an existing ticket)
 ```
 ## Extension
