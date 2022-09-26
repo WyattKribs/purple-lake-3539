@@ -11,6 +11,7 @@ RSpec and Shoulda-Matchers have been installed and set up.
 3. `git clone <repo_name>`
 4. `cd <repo_name>`
 5. `bundle install`
+6. `rails db:{drop,create,migrate,seed}`
 
 When you run `bundle exec rspec` you should have 2 passing tests.
 
