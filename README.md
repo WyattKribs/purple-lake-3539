@@ -94,11 +94,12 @@ and i see the ticket's subject now listed
 ## Extension
 ```
 Extension
-Best Friend
+Top Employees
 
 As a user,
-When I visit an employee show page,
-Then I see the name of the other employee
-who has the highest count of closed tickets shared with this employee,
-and I see the count of closed tickets that they share with this employee
+When I visit the department index page,
+Then I see a section for "Top Employees",
+And in that section I see the names of the 3 employees in this department
+who have the highest count of closed tickets, 
+and next to the employee name I see their count of closed tickets
 ```
