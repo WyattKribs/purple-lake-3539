@@ -74,7 +74,9 @@ Employee Show
 As a user,
 When I visit the Employee show page,
 I see the employee's name and department name,
-and I see a list of all of their tickets from oldest to youngest that only includes open tickets
+and I see a list displaying the ticket subjects and age,
+And I see that this list is ordered from oldest to youngest, 
+And I see that this list only includes open tickets
 ```
 ```
 Story 3
