@@ -80,6 +80,7 @@ And I see that this list only includes open tickets
 ```
 ```
 Story 3
+Assign an Open Ticket to an Employee
 
 As a user,
 When I visit the employee show page,
