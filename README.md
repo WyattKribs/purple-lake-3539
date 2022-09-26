@@ -99,7 +99,7 @@ Top Employees
 As a user,
 When I visit the department index page,
 Then I see a section for "Top Employees",
-And in that section I see the names of the 3 employees in this department
+And in that section I see the names of the 3 employees
 who have the highest count of closed tickets, 
-and next to the employee name I see their count of closed tickets
+and next to the employee name I see their count of closed tickets and their department
 ```
