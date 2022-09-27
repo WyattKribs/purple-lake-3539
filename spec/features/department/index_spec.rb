@@ -25,6 +25,7 @@ RSpec.describe 'department index page' do
 
 
     visit department_index_path
+    save_and_open_page
 
     expect(page).to have_content(employee1.name)
     expect(page).to have_content(employee2.name)

@@ -1,0 +1,6 @@
+<h1><%= @employee.name %></h1>
+<%= @employee.department.name %>
+<% @tickets.each do |t| %>
+  <p> subject: <%= t.subject %></p>
+  <p> age: <%= t.age %></p>
+<% end %>

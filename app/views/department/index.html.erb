@@ -1,10 +1,10 @@
 <h1> Departments </h1>
 <% @departments.each do |d| %>
-  <%= d.name %>
-  <%= d.floor %>
+  <h3><%= d.name %>
+  <%= d.floor %></h3>
   <% @employees.each do |e| %>
     <% if e.department_id == d.id %>
-      <%= e.name %>
+      <p><%= e.name %></p>
     <% else %>
     <% end %>
   <% end %>
