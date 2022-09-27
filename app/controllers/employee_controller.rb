@@ -4,6 +4,7 @@ class EmployeeController < ApplicationController
     @employee = Employee.find(params[:id])
     @department = Department.all
     @tickets = @employee.open_tickets
+    
   end
 
 end

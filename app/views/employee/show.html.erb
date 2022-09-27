@@ -1,6 +1,13 @@
 <h1><%= @employee.name %></h1>
-<%= @employee.department.name %>
+<h3><%= @employee.department.name %></h3>
 <% @tickets.each do |t| %>
   <p> subject: <%= t.subject %></p>
   <p> age: <%= t.age %></p>
+<% end %>
+
+<h3> New Ticket </h3>
+<%= form_with url: "/ticket", method: :patch, local: true do |f| %>
+  <%= f.label 'id' %>
+  <%= f.number_field :id %><br/><br/>
+  <%= f.submit 'Submit' %>
 <% end %>

@@ -49,4 +49,30 @@ RSpec.describe 'employee show page' do
     expect(page).to have_content('mouse')
     expect(page).to_not have_content('monitor')
   end
+
+  it 'has a form to add a new ticket' do
+    department = Department.create!(name: 'receiving', floor: '1st floor')
+    employee1 = Employee.create!(name: 'Gunther Guyman', level: 5, department_id: department.id)
+
+    visit employee_path(employee1.id)
+
+    expect(page).to have_field('id')
+  end
+
+  it 'can assign a new ticket' do
+    department = Department.create!(name: 'receiving', floor: '1st floor')
+    employee1 = Employee.create!(name: 'Gunther Guyman', level: 5, department_id: department.id)
+    employee2 = Employee.create!(name: 'Janni Wermak', level: 5, department_id: department.id)
+    ticket1 = Ticket.create!(subject: 'printer', age: 2, open: true)
+    emptick1 = EmployeeTicket.create!(employee_id: employee2.id, ticket_id: ticket1.id)
+
+    visit employee_path(employee1.id)
+
+    fill_in 'id', with: ticket1.id
+    click_button 'Submit'
+
+    expect(current_path).to eq(employee_path(employee1.id))
+  end
+
+
 end
